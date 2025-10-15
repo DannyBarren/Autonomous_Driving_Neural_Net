@@ -41,7 +41,7 @@ if __name__ == '__main__':
     warnings.filterwarnings("ignore")
 
     # Define the full image directory path
-    IMAGE_DIR = r"C:\Users\16144\OneDrive\Desktop\Caltech_AI_ML\Capstone\Barren_Tesla_Capstone\images"
+    IMAGE_DIR = 
 
     # Loading labels
     labels_df = pd.read_csv('labels.csv', header=None, names=['image_id', 'class', 'xmin', 'ymin', 'xmax', 'ymax'])
@@ -208,7 +208,8 @@ if __name__ == '__main__':
         print(f'Epoch {epoch+1}/{num_epochs}: Loss = {train_loss:.4f}')
 
     # Saving model
-    output_path = r"C:\Users\16144\OneDrive\Desktop\Caltech_AI_ML\Capstone\Barren_Tesla_Capstone\trained_model.pth"
+    output_path = 
     os.makedirs(os.path.dirname(output_path), exist_ok=True)
     torch.save(model.state_dict(), output_path)
+
     print("\nTraining Complete.")
